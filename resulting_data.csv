@@ -1,0 +1,20 @@
+Number of Retweets, Number of Replies, Positive Score, Negative Score, Net Score,State
+3,0,0,0,0,Equal
+1,0,2,2,0,Equal
+1,2,1,0,1,Positive
+3,1,1,0,1,Positive
+6,0,2,0,2,Positive
+9,5,2,0,2,Positive
+19,0,2,0,2,Positive
+0,0,0,3,-3,Negative
+0,0,0,2,-2,Negative
+82,2,4,0,4,Positive
+0,0,0,1,-1,Negative
+0,0,1,0,1,Positive
+47,0,2,0,2,Positive
+2,1,1,0,1,Positive
+0,2,1,0,1,Positive
+0,0,2,1,1,Positive
+4,6,3,0,3,Positive
+19,0,3,1,2,Positive
+0,0,1,1,0,Equal
