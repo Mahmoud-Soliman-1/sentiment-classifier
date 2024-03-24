@@ -1,18 +1,23 @@
-# sentiment-classifier
-This project is for classifying fake data from Twitter (tweets). It is used to classify the tweet as positive or negative by calculating the count of negative words and positive words and finding the net score. Based on this, it calculates whether the sentence tends to be positive or not.
+Sentiment Classifier 💬
+This project focuses on classifying fake data from Twitter (tweets). It aims to determine whether a tweet is positive or negative by analyzing the presence of positive and negative words and calculating the net score. The net score indicates the overall sentiment of the tweet.
 
-For a specific description of the project >>>
+Project Description 📝
+The project utilizes fake Twitter data stored in a CSV file named "project_twitter_data.csv", which includes the tweet text, the number of retweets, and the number of replies.
 
-The project takes A fake Twitter date from a CSV file named project_twitter_data.csv which has the text of a tweet, the number of retweets, and the number of replies to that tweet.
+Positive and negative sentiment words are listed in separate files named "positive_words.txt" and "negative_words.txt".
 
-Some words express positive and negative sentiments in the files positive_words.txt and negative_words.txt.
+Implementation Details 🛠️
+1- Strip Punctuation Function: This function removes punctuation from the tweet text using a string.
+
+2- get_neg && get_pos: It  determines the number of positive and negative words in the text
+
+3- Resulting Data CSV: The project generates a CSV file named "resulting_data.csv", containing columns for the number of retweets, number of replies, positive score (indicating the presence of happy words), negative score (indicating the presence of angry words), and net score (overall sentiment) for each tweet.
+
+4- Visualization: Additionally, the project produces a graph showing the relationship between the net score and the number of retweets.
+
+Conclusion 📊
+This sentiment classifier provides insights into the sentiment of Twitter tweets, facilitating the identification of positive and negative sentiments within the data. The visualization enhances understanding by illustrating the correlation between sentiment and tweet engagement (retweets).
 
 
-The Project is to build a sentiment classifier, which will detect how positive or negative each tweet is. and will create a CSV file, which contains columns for the Number of Retweets, Number of Replies, Positive Score (which is how many happy words are in the tweet), Negative Score (which is how many angry words are in the tweet), and the Net Score for each tweet (difference of Positive and Negative Score ),
-
-At first in the strip_punctuation Function, I pass String to remove punctuation from the text then get the number of positive/negative words in the text from the get_pos /get_neg function
 
 
-Then create a CSV file called resulting_data.csv, which contains the number of Retweets, Number of Replies, Positive Score (which is how many happy words are in the tweet), Negative Score (which is how many angry words are in the tweet), and the Net Score (how positive or negative the text is overall if>0 it positive if <0 negative ) for each tweet.
-
-Then produce a graph of the Net Score vs the Number of Retweets
